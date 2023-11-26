@@ -14,4 +14,6 @@ public interface EngineService {
     EngineDTO getEngine(Long id) throws EngineNotFoundException;
 
     void deleteEngine(Long id) throws EngineNotFoundException;
+
+    EngineDTO updateEngine(Long id, EngineDTO engineDTO) throws EngineNotFoundException;
 }
