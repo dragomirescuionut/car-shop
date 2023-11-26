@@ -4,14 +4,12 @@ import com.arasaka.carshop.exceptions.EngineNotFoundException;
 import com.arasaka.carshop.models.dtos.EngineDTO;
 import com.arasaka.carshop.models.entities.Engine;
 import com.arasaka.carshop.repositories.EngineRepository;
-import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @Slf4j
