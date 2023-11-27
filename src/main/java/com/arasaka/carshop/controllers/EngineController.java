@@ -51,12 +51,4 @@ public class EngineController {
         List<EngineDTO> resultList = engineService.getCommonEngines(params);
         return ResponseEntity.ok(resultList);
     }
-
-//    @GetMapping("/filter")
-//    public ResponseEntity<List<EngineDTO>> getEnginesByHorsePowerGreaterThanEqual(@RequestParam int horsePower, @RequestParam String make) {
-//        List<EngineDTO> horseList = engineService.getEnginesByHorsePowerGreaterThanEqual(horsePower);
-//        List<EngineDTO> makeList = engineService.getEnginesByMake(make);
-//        List<EngineDTO> resultList = engineService.getCommonEngines(horseList, makeList);
-//        return ResponseEntity.ok(resultList);
-//    }
 }

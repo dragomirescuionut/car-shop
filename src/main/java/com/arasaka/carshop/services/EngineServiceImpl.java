@@ -83,11 +83,6 @@ public class EngineServiceImpl implements EngineService {
         engineList.stream()
                 .forEach(element -> engineDTOList2.add(modelMapper.map(element, EngineDTO.class)));
 
-      /*  List<EngineDTO> engineDTOList = new ArrayList<>();
-        for (Engine engine : engineList) {
-            engineDTOList.add(modelMapper.map(engine, EngineDTO.class));
-        }
-       */
         return engineDTOList2;
     }
 
@@ -136,17 +131,6 @@ public class EngineServiceImpl implements EngineService {
 
         return result;
     }
-
-//    @Override
-//    public List<EngineDTO> getCommonEngines(List<EngineDTO>... engineListArray) {
-//        List<EngineDTO> result = new ArrayList<>(engineListArray[0]);
-//
-//        for (List<EngineDTO> list : engineListArray) {
-//            result.retainAll(list);
-//        }
-//
-//        return result;
-//    }
 
     private void updateEntity(Engine engine, EngineDTO engineDTO) {
         engine.setHorsePower(engineDTO.getHorsePower());
