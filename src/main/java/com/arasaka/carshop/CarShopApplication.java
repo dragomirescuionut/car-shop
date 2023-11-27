@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CarShopApplication {
 
 	public static void main(String[] args) {
+
+		//Aplicatie Jmen
 		SpringApplication.run(CarShopApplication.class, args);
 	}
 
