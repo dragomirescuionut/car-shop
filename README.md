@@ -1,6 +1,6 @@
 # Car Shop
 
-Super car shop.
+Super car shop. **Added custom validations and exeption handling.**
 
 ### Description
 
